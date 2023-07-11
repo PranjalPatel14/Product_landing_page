@@ -58,3 +58,17 @@ body{
     transition: 2s;
     cursor: pointer;
 }
+
+#features{
+    padding-top: 10%;
+}
+
+#features .desc{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5px;
+    height: 125px;
+    width: 80vw;
+}
+
