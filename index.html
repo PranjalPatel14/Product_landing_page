@@ -10,19 +10,20 @@
 </head>
 <body>
     <header id="header"><h1>Apple</h1>
-        <!-- <img id="header-img" src="png-transparent-apple-logo-business-desktop-apple-heart-computer-logo.png"> -->
+        <img id="header-img" src="png-transparent-apple-logo-business-desktop-apple-heart-computer-logo.png">
         <nav id="nav-bar">
             <ul>
                 <li><a class="nav-link" href="#features">Features</a>
                 </li>
                 <li><a class="nav-link" href="#howitworks">How it Works</a></li>
+                <li><a class="nav-link" href="#pricing">Pricing</a></li>
             </ul>
         </nav>
     </header>
-    <form id="form">
-        <p id="email">Introducing AirPods Max</p>
-        <input id="email-add" type="email" placeholder="Enter your email address">
-        <button id="submit" href="https://www.freecodecamp.com/email-submit">Get Started</button>
+    <form id="form" action="https://www.freecodecamp.com/email-submit">
+        <p id="int-email">Introducing AirPods Max</p>
+        <input id="email" name="email" type="email" placeholder="Enter your email address">
+        <input type="submit" class="btn" id="submit">  
     </form>
     <section id="features">
         <div class="grid">
@@ -47,7 +48,7 @@
         </div>
     </section>
     <section id="howitworks">
-        <iframe width="600" height="300" src="https://www.youtube.com/embed/q5xbAq1DvEc"></iframe>
+        <iframe id="video" width="600" height="300" src="https://www.youtube.com/embed/q5xbAq1DvEc"></iframe>
     </section>
     <section id="pricing">
         <div class="product" id="spacegray">
@@ -58,7 +59,7 @@
             <p>Get free delivery, or pick up available items at an Apple Store</p>
             <p>Get 6 months of Apple Music free with your AirPods MaxFootnote⁺</p>
             <p>Free and easy returns</p>
-            <button src="https://www.apple.com/shop/buy-airpods/airpods-max/space-gray">BUY</button>
+            <button class="btn" src="https://www.apple.com/shop/buy-airpods/airpods-max/space-gray">BUY</button>
         </div>
         <div class="product" id="silver">
             <h2 class="level">AirPods Max</h2>
@@ -68,7 +69,7 @@
             <p>Get free delivery, or pick up available items at an Apple Store</p>
             <p>Get 6 months of Apple Music free with your AirPods MaxFootnote⁺</p>
             <p>Free and easy returns</p>
-            <button src="https://www.apple.com/shop/buy-airpods/airpods-max/silver">BUY</button>
+            <button class="btn" src="https://www.apple.com/shop/buy-airpods/airpods-max/silver">BUY</button>
         </div>
         <div class="product" id="skyblue">
             <h2 class="level">AirPods Max</h2>
@@ -82,5 +83,11 @@
         </div>
         </div>
     </section>
+    <footer>
+        <p>Privacy</p>
+        <p>Terms</p>
+        <p>Contact</p>
+        <span>Copyright © 2023 Apple Inc. All rights reserved.</span>
+    </footer>
 </body>
 </html>

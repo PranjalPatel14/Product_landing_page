@@ -21,20 +21,36 @@ header > h1{
     margin-left: 100px;
 }
 
+#nav-bar > ul{
+    display: flex;
+    width: 35vw;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+li{
+    list-style-type: none;
+}
+
 body{
     font-size: 17px;
     font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 400;
 }
 
-#email{
+#int-email{
     text-align: center;
     font-size: 1.5rem;
     padding: 15px;
     font-weight:550;
 }
 
-#email-add{
+#email{
     margin: auto;
     display: block;
     height: 25px;
@@ -42,25 +58,8 @@ body{
     margin-bottom: 15px;
 }
 
-#submit{
-    display: block;
-    margin: auto;
-    padding: 3px;
-    background-color: yellow;
-    font-size: large;
-    font-weight: 600;
-    border: none;
-    width: 150px;
-}
-
-#submit:hover{
-    background-color: orange;
-    transition: 2s;
-    cursor: pointer;
-}
-
 #features{
-    padding-top: 10%;
+    padding-top: 7.5%;
 }
 
 #features .desc{
@@ -83,6 +82,8 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: center;
+    padding-left: 150px;
+    padding-right: 150px;
 }
 
 .product{
@@ -96,3 +97,67 @@ body{
     border-radius: 3px;
 }
 
+.btn{
+    display: block;
+    margin: auto;
+    padding: 3px;
+    background-color: yellow;
+    font-size: large;
+    font-weight: 600;
+    border: none;
+    width: 150px;
+}
+
+.btn:hover{
+    background-color: orange;
+    transition: 2s;
+    cursor: pointer;
+}
+
+.product > .level {
+    background-color: #ddd;
+    color: black;
+    padding: 15px 0;
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.product > p{
+    margin: 15px 0;
+}
+.product > button {
+    border: 0;
+    margin: 15px 0;
+    background-color: #f1c40f;
+    font-weight: 400;
+}
+
+footer{
+    background-color: rgb(229, 225, 225);
+    margin-left: 150px;
+    margin-right: 150px;
+    padding: 20px;
+    display: block;
+    margin-top: 2.5%;
+}
+
+footer > p{
+    display: inline;
+    padding: 5px;
+}
+
+footer > span{
+    margin-top: 5px;
+    display: flex;
+}
+
+img{
+    display: none;
+}
+
+@media only screen and (max-width: 600px) {
+    .body{
+        background-color: #f1c40f;
+    }
+}
